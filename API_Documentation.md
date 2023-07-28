@@ -2,7 +2,7 @@
 
 ## API Documentation
 
-### 1) GET /video-thumbnails
+### 1) GET api/video-thumbnails
 
 Mengembalikan semua video thumbnail
 
@@ -20,7 +20,7 @@ Mengembalikan semua video thumbnail
     ```
 
 
-### 2) GET /products/{video-id}
+### 2) GET api/products/{video-id}
 
 Mengembalikan semua product berdasarkan id video thumbnail
 
@@ -41,7 +41,7 @@ Mengembalikan semua product berdasarkan id video thumbnail
 
 
 
-### 3) GET /comments/{video-id}
+### 3) GET api/comments/{video-id}
 
 Mengembalikan semua comment berdasarkan id video thumbnail
 
@@ -60,7 +60,7 @@ Mengembalikan semua comment berdasarkan id video thumbnail
     }
     ```
 
-### 4) POST /comments/{video-id}
+### 4) POST api/comments/{video-id}
 Membuat video comment baru berdasarkan id video thumbnail
 
 - url params
