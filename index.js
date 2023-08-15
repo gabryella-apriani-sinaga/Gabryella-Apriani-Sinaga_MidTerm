@@ -7,7 +7,7 @@ const commentRoute = require("./src/routes/commentRoute");
 
 const app = express();
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "*",
   methods: "GET,PUT,POST,DELETE",
 };
 
