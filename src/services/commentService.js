@@ -6,6 +6,5 @@ exports.getCommentList = async (videoId) => {
 
 exports.createComment = async (body, videoId) => {
   body.videoThumbnailId = videoId;
-  body.timestamp = new Date();
   return Comment.create(body);
 };

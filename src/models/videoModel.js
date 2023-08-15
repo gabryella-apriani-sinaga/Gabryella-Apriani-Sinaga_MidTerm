@@ -1,6 +1,11 @@
 const mongoose = require("mongoose");
 
 const videoThumbnailSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: [true, "video thumbnail harus punya title"],
+  },
+
   urlVideoThumbnail: {
     type: String,
     required: [true, "video thumbnail harus punya urlVideoThumbnail"],

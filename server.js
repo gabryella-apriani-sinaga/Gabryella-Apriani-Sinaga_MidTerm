@@ -7,7 +7,7 @@ const DB = process.env.DATABASE_MONGODB_ATLAS_URI;
 
 mongoose
   .connect(DB)
-  .then((conn) => {})
+  .then((conn) => {console.log("Koneksi Berhasil")})
   .catch((err) => {
     console.log(err.message);
   });

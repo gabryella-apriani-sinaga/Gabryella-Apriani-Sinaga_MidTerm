@@ -9,10 +9,7 @@ const commentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  timestamp: {
-    type: Date,
-    required: true,
-  },
+  
   videoThumbnailId: {
     type: String,
     required: true,

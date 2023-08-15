@@ -1,15 +1,19 @@
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 const videoThumbnailRoute = require("./src/routes/videoRoute");
 const productRoute = require("./src/routes/productRoute");
 const commentRoute = require("./src/routes/commentRoute");
 
 const app = express();
+const corsOptions = {
+  origin: "http://localhost:3000",
+  methods: "GET,PUT,POST,DELETE",
+};
 
 // 1) MIDDLEWARES
-if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
-}
+  app.use(cors(corsOptions));
 
 app.use(express.json());
 
